@@ -9,7 +9,7 @@ PoC of a vector image search. Similar to a reverse image search offered by searc
 ```
 docker-compose up -d
 npm i
-node seed.js # This seeds the database with all images in the img/ directory
+node seed.js # This seeds the database with a "Meme" class and all images in the img/ directory
 ```
 
 ## Testing
