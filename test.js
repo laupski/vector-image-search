@@ -9,7 +9,7 @@ const test = Buffer.from( fs.readFileSync('./test.jpg') ).toString('base64');
 
 const resImage = await client.graphql.get()
   .withClassName('Meme')
-  .withFields(['image'])
+  .withFields('image')
   .withNearImage({ image: test })
   .withLimit(1)
   .do();
